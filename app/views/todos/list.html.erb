@@ -1,14 +1,20 @@
 <div class="row">
-  <div class="col-md-6">
+  <div class="col-md-1">
+  </div>
+  <div class="col-md-4 jumbotron ">
 <% @complete.each do |i| %>
-<h1> <%= i.description %> </h1>
-<p> <%= i.completed %> </p>
+    <h1> <%= i.description %> </h1>
+    <p> <%= i.completed %> </p>
 <% end %>
   </div>
-  <div class="col-md-6">
+  <div class="col-md-1">  
+  </div>
+  <div class="col-md- jumbotron ">
 <% @no_complete.each do |i| %>
-<h1> <%= i.description %> </h1>
-<p> <%= i.completed %> </p>
+    <h1> <%= i.description %> </h1>
+    <p> <%= i.completed %> </p>
 <% end %>
+  </div>
+  <div class="col-md-1">
   </div>
 </div>
